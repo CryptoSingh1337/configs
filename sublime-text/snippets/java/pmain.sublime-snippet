@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+import java.io.*;
+import java.util.*;
+     
+public class ${TM_FILENAME/(.+)\..+|.*/$1/:name} {
+
+    public void solve(Scanner sc, PrintWriter pw) {
+        int n = sc.nextInt();
+    }
+
+    public static void main(String... args) throws IOException {
+        Scanner sc = new Scanner(new FileReader(System.getenv("INPUT")));
+		PrintWriter pw = new PrintWriter(new BufferedOutputStream(new FileOutputStream(System.getenv("OUTPUT"))));
+		int t = sc.nextInt();
+		${TM_FILENAME/(.+)\..+|.*/$1/:name} obj = new ${TM_FILENAME/(.+)\..+|.*/$1/:name}();
+		while (t-- > 0)
+			t.solve(sc, pw);
+		pw.close();
+		sc.close();
+    }
+}
+]]></content>
+	<tabTrigger>pmain</tabTrigger>
+  	<source>source.java</source>
+</snippet>

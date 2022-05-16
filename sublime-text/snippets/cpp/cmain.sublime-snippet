@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+using namespace std;
+
+void solve() {
+	
+}
+
+int main() {
+#ifndef ONLINE_JUDGE
+	freopen(getenv("INPUT"), "r", stdin);
+	freopen(getenv("OUTPUT"), "w", stdout);
+#endif
+	std::ios_base::sync_with_stdio(false);
+	solve();
+}
+]]></content>
+	<tabTrigger>cmain</tabTrigger>
+  	<source>source.cpp</source>
+</snippet>

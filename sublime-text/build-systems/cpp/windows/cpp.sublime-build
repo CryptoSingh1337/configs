@@ -1,0 +1,5 @@
+{
+	"shell_cmd": "g++ $file -o %TEMP%/${file_base_name} && %TEMP%/${file_base_name}",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"selector": "source.c, source.c++"
+}
