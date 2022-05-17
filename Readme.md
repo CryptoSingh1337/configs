@@ -1,5 +1,8 @@
 # Configs
 
+### Current Setup
+![image](https://user-images.githubusercontent.com/56120837/168874293-13c2ffa8-cf0a-4a58-bb45-36081b0205ae.png)
+
 ### i3wm
 
 #### Install these packages
