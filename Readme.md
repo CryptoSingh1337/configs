@@ -42,4 +42,4 @@ make install
 - [WhiteSur](https://www.xfce-look.org/p/1411743)
 
 ### Fonts
-- [FiraCode Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Regular/complete)
+- [FiraCode Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Regular/complete) (Regular, SemiBold, Bold)
