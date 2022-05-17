@@ -6,8 +6,30 @@
 - i3-gaps - tiling window manager
 - rofi - application menu
 - nitrogen - desktop background manager
-- i3blocks - i3 bar (v 1.5.0)
-- dh-autoreconf - for installing the latest i3blocks
+- i3blocks - i3status bar (v >= 1.5.0)
+- i3blocks-modules - various modules for i3blocks
+
+
+### Install i3blocks (v 1.5.0)
+```bash
+apt cache search dh-autoreconf
+apt install dh-autoreconf
+apt install make
+git clone https://github.com/vivien/i3blocks
+cd i3blocks
+chmod +x autogen.sh
+./autogen.sh
+./configure
+make
+make install
+```
+
+### Install i3blocks-modules
+```bash
+git clone https://github.com/cytopia/i3blocks-modules.git
+cd i3blocks-modules
+make install
+```
 
 ### Themes
 - [Arc-Darkest-3.38](https://www.xfce-look.org/p/1317409) - Endeavour OS
