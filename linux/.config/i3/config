@@ -50,11 +50,12 @@ bindsym $mod+Shift+q kill
 # Application menu handled by rofi: #
 #####################################
 
-# rofi bindings fancy application menu ($mod+d /F9 optional disabled)
+## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
+
 bindsym $mod+d exec rofi -modi drun -show drun \
 		-config ~/.config/rofi/rofidmenu.rasi
 
-# rofi bindings for window menu ($mod+t /F10 optional disabled)
+## rofi bindings for window menu ($mod+t /F10 optional disabled)
 
 bindsym $mod+t exec rofi -show window \
 		-config ~/.config/rofi/rofidmenu.rasi
@@ -129,15 +130,13 @@ bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 
 # Always open some programs on specified workspace
-assign [class="^Brave"]		   $ws2
-assign [class="^Sublime-text"]     $ws3
+assign [class="^Brave"]		$ws2
+assign [class="^Sublime-text"]	$ws3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -197,24 +196,31 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.background       #F8F8F2
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	font pango: FiraCode Nerd Font 10
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	# status_command xmobar -TPango
-	# pango_markup enabled
 	output primary
+	font pango: FiraCode Nerd Font 10
 
-        colors {
-                separator          $purple
-                background         $darkgrey
-                statusline         $white
-#                                       border                  bg              txt             indicator
-                focused_workspace       $mediumgrey             $grey           $darkgrey       $purple
-                active_workspace        $lightblue              $mediumgrey     $darkgrey       $purple
-                inactive_workspace      $darkgrey               $darkgrey       $grey           $purple
-                urgent_workspace        $urgentred              $urgentred      $white          $purple
+	colors {
+		background #282A36
+		statusline #F8F8F2
+		separator  #44475A
+		
+		focused_workspace  #44475A #44475A #F8F8F2
+		active_workspace   #282A36 #44475A #F8F8F2
+		inactive_workspace #282A36 #282A36 #BFBFBF
+		urgent_workspace   #FF5555 #FF5555 #F8F8F2
+		binding_mode       #FF5555 #FF5555 #F8F8F2
 	}
 }
 
