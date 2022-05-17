@@ -6,6 +6,8 @@
 - i3-gaps - tiling window manager
 - rofi - application menu
 - nitrogen - desktop background manager
+- i3blocks - i3 bar (v 1.5.0)
+- dh-autoreconf - for installing the latest i3blocks
 
 ### Themes
 - [Arc-Darkest-3.38](https://www.xfce-look.org/p/1317409) - Endeavour OS
