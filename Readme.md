@@ -1,7 +1,11 @@
 # Configs
 
 ### Current Setup
-![image](https://user-images.githubusercontent.com/56120837/168988932-e3e17846-11f8-4175-ae44-39837e5265bc.png)
+![image](https://user-images.githubusercontent.com/56120837/169096841-467f4e6c-a882-4d34-be1d-91b5bd251b73.png)
+
+#### Focused window title
+![image](https://user-images.githubusercontent.com/56120837/169097090-b69a86b2-ce56-4b7a-a7d1-6c547e4bac32.png)
+
 
 ### i3wm
 
