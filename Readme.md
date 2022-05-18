@@ -1,7 +1,7 @@
 # Configs
 
 ### Current Setup
-![image](https://user-images.githubusercontent.com/56120837/168875579-3e3a6896-5244-4198-b78b-a02ecf13a0bd.png)
+![image](https://user-images.githubusercontent.com/56120837/168988932-e3e17846-11f8-4175-ae44-39837e5265bc.png)
 
 ### i3wm
 
