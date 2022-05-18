@@ -70,17 +70,9 @@ if ($temperature < 45) {
   $label = '';
 }
 # Print short_text, full_text
-print "${label}";
+print "${label} cpu_tem:";
 print " $temperature°C\n";
-print "${label}";
+print "${label} cpu_tem:";
 print " $temperature°C\n";
-
-# Print color, if needed
-if ($temperature >= $t_crit) {
-    print "#FF0000\n";
-    exit 33;
-} elsif ($temperature >= $t_warn) {
-    print "#FFFC00\n";
-}
 
 exit 0;
