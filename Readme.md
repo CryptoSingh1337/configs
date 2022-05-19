@@ -51,6 +51,9 @@ sudo cp target/release/alacritty /usr/bin
 sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
 sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
+mkdir -p ~/.bash_completion.d
+cp extra/completions/alacritty.bash ~/.bash_completion.d/alacritty
+echo "source ~/.bash_completion.d/alacritty" >> ~/.bashrc
 ```
 
 ### Themes
