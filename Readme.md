@@ -15,6 +15,7 @@
 - nitrogen - desktop background manager
 - i3blocks - i3status bar (v >= 1.5.0)
 - i3blocks-modules - various modules for i3blocks
+- Alacritty - A fast, cross-platform, OpenGL terminal emulator
 
 
 ### Install i3blocks (v 1.5.0)
@@ -36,6 +37,20 @@ make install
 git clone https://github.com/cytopia/i3blocks-modules.git
 cd i3blocks-modules
 make install
+```
+
+### Install Alacritty
+```bash
+git clone https://github.com/alacritty/alacritty.git
+cd alacritty
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+cargo build --release
+infocmp alacritty
+sudo cp target/release/alacritty /usr/bin
+sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
+sudo desktop-file-install extra/linux/Alacritty.desktop
+sudo update-desktop-database
 ```
 
 ### Themes
