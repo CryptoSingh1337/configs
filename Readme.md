@@ -64,10 +64,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 ### Themes
 - [Arc-Darkest-3.38](https://www.xfce-look.org/p/1317409) - Endeavour OS
+- [Nordic](https://www.xfce-look.org/p/1267246)
 
 ### Icons
-- [Papirus](https://www.xfce-look.org/p/1166289)
 - [Qogir](https://www.xfce-look.org/p/1296407/) - Endeavour OS
+- [Tela-nord](https://www.xfce-look.org/p/1279924)
+
 
 ### Cursors
 - [WhiteSur](https://www.xfce-look.org/p/1411743)
