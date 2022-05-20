@@ -56,6 +56,12 @@ cp extra/completions/alacritty.bash ~/.bash_completion.d/alacritty
 echo "source ~/.bash_completion.d/alacritty" >> ~/.bashrc
 ```
 
+### Install vim-plug for neovim
+```bash
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
 ### Themes
 - [Arc-Darkest-3.38](https://www.xfce-look.org/p/1317409) - Endeavour OS
 
