@@ -1,12 +1,7 @@
 #!/bin/bash
 
 ID=$(xprop -root | awk '/_NET_ACTIVE_WINDOW\(WINDOW\)/{print $NF}')
-if [[ $1 ]] 
-then
-	TITLE=$(xprop -id $ID -len $1 | awk '/_NET_WM_NAME/{$1=$2="";print}' | cut -d'"' -f2)
-else
-	TITLE=$(xprop -id $ID | awk '/_NET_WM_NAME/{$1=$2="";print}' | cut -d'"' -f2)
-fi
+TITLE=$(xprop -id $ID | awk '/_NET_WM_NAME/{$1=$2="";print}' | cut -d'"' -f2)
 
 if [[ "$TITLE" != "" ]]
 then
@@ -15,7 +10,9 @@ then
 	then
 		TITLE="Brave Browser"
 		printf "Brave Browser\n"
-	else
-		printf "$TITLE\n"
+	elif [[ $1 ]]
+	then
+		TITLE=${TITLE:0:$1}
 	fi
+	printf "$TITLE\n"
 fi
