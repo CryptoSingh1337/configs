@@ -18,6 +18,8 @@
 
 
 ### Install i3blocks (v 1.5.0)
+
+#### Debian:
 ```bash
 apt cache search dh-autoreconf
 apt install dh-autoreconf
@@ -31,6 +33,11 @@ make
 make install
 ```
 
+#### Arch:
+```bash
+pacman -Sy i3blocks
+```
+
 ### Install i3blocks-modules
 ```bash
 git clone https://github.com/cytopia/i3blocks-modules.git
@@ -39,6 +46,8 @@ make install
 ```
 
 ### Install Alacritty
+
+#### Debian:
 ```bash
 git clone https://github.com/alacritty/alacritty.git
 cd alacritty
@@ -55,10 +64,23 @@ cp extra/completions/alacritty.bash ~/.bash_completion.d/alacritty
 echo "source ~/.bash_completion.d/alacritty" >> ~/.bashrc
 ```
 
+#### Arch:
+```bash
+pacman -Sy alacritty
+```
+
 ### Install vim-plug for neovim
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+### Xrandr docked
+```bash
+xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 75.00 --output eDP-1 --off
+autorandr --save docked
+xrandr --output eDP-1 --primary --mode 1920x1090 --rate 60.00 --output HDMI-1 --off
+autorandr --save naive
 ```
 
 ### Themes
