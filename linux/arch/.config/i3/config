@@ -264,6 +264,12 @@ bar {
 	}
 }
 
+###################
+# Assign windows: #
+###################
+
+assign [class="Brave"] $ws2
+
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
 
