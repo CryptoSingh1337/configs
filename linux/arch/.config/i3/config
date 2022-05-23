@@ -249,9 +249,10 @@ bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	font pango: FiraCode Nerd Font SemiBold 10
 	position top
+	i3bar_command i3bar --transparency
 
 	colors {
-		background #282A36
+		background #282A3600
 		statusline #F8F8F2
 		separator  #44475A
 
