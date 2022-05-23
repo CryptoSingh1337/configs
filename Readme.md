@@ -16,6 +16,7 @@
 - i3blocks-modules - various modules for i3blocks
 - Alacritty - A fast, cross-platform, OpenGL terminal emulator
 - autorandr - manage config for docked setup
+- pamac - package manager GUI
 
 
 ### Install i3blocks (v 1.5.0)
@@ -84,6 +85,13 @@ xrandr --output eDP-1 --primary --mode 1920x1090 --rate 60.00 --output HDMI-1 --
 autorandr --save naive
 ```
 
+### Install pamac
+```bash
+yay -S pamac-aur
+downgrade archlinux-appstream-data
+```
+Choose 2019 version and save this to the ignore list
+
 ### Themes
 - [Arc-Darkest-3.38](https://www.xfce-look.org/p/1317409) - Endeavour OS
 - [Nordic](https://www.xfce-look.org/p/1267246)
@@ -97,4 +105,11 @@ autorandr --save naive
 - [WhiteSur](https://www.xfce-look.org/p/1411743)
 
 ### Fonts
+```bash
+touch fonts.txt
+echo "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.ttf" > fonts.txt
+echo "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Bold/complete/Fira%20Code%20Bold%20Nerd%20Font%20Complete.ttf" >> fonts.txt
+echo "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/SemiBold/complete/Fira%20Code%20SemiBold%20Nerd%20Font%20Complete.ttf" >> fonts.txt
+wget -P /usr/share/fonts/TTF/ -i fonts.txt
+```
 - [FiraCode Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Regular/complete) (Regular, SemiBold, Bold)

@@ -58,8 +58,8 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 # Backlight control
-bindsym XF86MonBrightnessUp exec xbacklight +5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
-bindsym XF86MonBrightnessDown exec xbacklight -5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -153,17 +153,17 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # save screenshot in home directory
-bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
+bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
 # Start Applications
 bindsym $mod+F2 exec --no-startup-id brave
-bindsym $mod+F3 exec thunar
-bindsym $mod+F4 exec sublime-text.subl
-bindsym $mod+F5 exec code
-bindsym $mod+F6 exec discord
+bindsym $mod+F3 exec --no-startup-id thunar
+bindsym $mod+F4 exec --no-startup-id sublime-text.subl
+bindsym $mod+F5 exec --no-startup-id code
+bindsym $mod+F6 exec --no-startup-id discord
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -244,7 +244,6 @@ client.background       #F8F8F2
 # finds out, if available)
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	output primary
 	font pango: FiraCode Nerd Font SemiBold 10
 	position top
 

@@ -1,7 +1,7 @@
 window:
     padding:
-        x: 5
-        y: 5
+        x: 10
+        y: 10
     class:
         instance: Alacritty
         general: Alacritty
@@ -21,7 +21,7 @@ font:
     italic:
         family: FiraCode Nerd Font
         style: Italic
-    size: 14
+    size: 12
 draw_bold_text_with_bright_colors: true
 
 colors:
@@ -49,7 +49,7 @@ colors:
 
 cursor:
     style:
-        shape: Beam
+        shape: Block
         blinking: Off
         blink-interval: 750
 
