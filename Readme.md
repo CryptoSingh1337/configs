@@ -15,6 +15,7 @@
 - i3blocks - i3status bar (v >= 1.5.0)
 - i3blocks-modules - various modules for i3blocks
 - Alacritty - A fast, cross-platform, OpenGL terminal emulator
+- autorandr - managing cofig for docked setup
 
 
 ### Install i3blocks (v 1.5.0)
