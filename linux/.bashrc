@@ -9,8 +9,3 @@ function wifi {
 export INPUT="$HOME/input.txt"
 export OUTPUT="$HOME/output.txt"
 alias output="cat $OUTPUT"
-
-reset-cursor() {
-  printf '\033]50;CursorShape=1\x7'
-}
-export PS1="$(reset-cursor)$PS1"

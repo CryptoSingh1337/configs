@@ -21,7 +21,7 @@ font:
     italic:
         family: FiraCode Nerd Font
         style: Italic
-    size: 14
+    size: 12
 draw_bold_text_with_bright_colors: true
 
 colors:
@@ -49,11 +49,9 @@ colors:
 
 cursor:
     style:
-        shape: Beam
+        shape: Block
         blinking: Off
         blink-interval: 750
-    vi_mode_style:
-        shape: Block
 
 selection:
     save_to_clipboard: true
