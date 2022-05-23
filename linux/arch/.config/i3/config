@@ -225,6 +225,9 @@ exec --no-startup-id dex --autostart --environment i3
 # Desktop notifications
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
+# Picom
+exec --no-startup-id picom --experimental-backends -b
+
 # num lock activated
 exec --no-startup-id numlockx on
 
