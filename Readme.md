@@ -14,7 +14,6 @@
 - rofi - application menu
 - nitrogen - desktop background manager
 - i3blocks - i3status bar (v >= 1.5.0)
-- i3blocks-modules - various modules for i3blocks
 - Alacritty - A fast, cross-platform, OpenGL terminal emulator
 - autorandr - manage config for docked setup
 - pamac - package manager GUI
@@ -39,13 +38,6 @@ make install
 #### Arch:
 ```bash
 pacman -Sy i3blocks
-```
-
-### Install i3blocks-modules
-```bash
-git clone https://github.com/cytopia/i3blocks-modules.git
-cd i3blocks-modules
-make install
 ```
 
 ### Install Alacritty
