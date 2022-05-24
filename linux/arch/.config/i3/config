@@ -161,7 +161,7 @@ for_window [urgent=latest] focus
 # Start Applications
 bindsym $mod+F2 exec --no-startup-id brave
 bindsym $mod+F3 exec --no-startup-id thunar
-bindsym $mod+F4 exec --no-startup-id sublime-text.subl
+bindsym $mod+F4 exec --no-startup-id subl
 bindsym $mod+F5 exec --no-startup-id code
 bindsym $mod+F6 exec --no-startup-id discord
 
