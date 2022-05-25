@@ -84,6 +84,11 @@ downgrade archlinux-appstream-data
 ```
 Choose 2019 version and save this to the ignore list
 
+### Install starship prompt
+```bash
+curl -sS https://starship.rs/install.sh | sh
+```
+
 ### Themes
 - [Arc-Darkest-3.38](https://www.xfce-look.org/p/1317409) - Endeavour OS
 - [Nordic](https://www.xfce-look.org/p/1267246)
