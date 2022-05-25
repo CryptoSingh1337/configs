@@ -1,10 +1,10 @@
 # Configs
 
 ### Current Setup
-![2022-05-24-22:48:02-screenshot](https://user-images.githubusercontent.com/56120837/170094768-8731c9da-8bbe-4373-b504-c91f102060ec.png)
+![2022-05-25-08:33:19-screenshot](https://user-images.githubusercontent.com/56120837/170171058-21ce9ca1-1ac7-4c30-8ad4-43d5a83ac3b0.png)
 
 ### Focused window title and Alacritty (gruvboxdark-soft theme)
-![2022-05-24-22:48:50-screenshot](https://user-images.githubusercontent.com/56120837/170094804-feb7968f-5e44-4433-8a35-cec2210e7035.png)
+![2022-05-25-08:33:35-screenshot](https://user-images.githubusercontent.com/56120837/170171070-5a951644-02d7-4911-b891-e224725d1c98.png)
 
 ### i3wm
 
