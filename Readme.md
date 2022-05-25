@@ -87,6 +87,8 @@ Choose 2019 version and save this to the ignore list
 ### Install starship prompt
 ```bash
 curl -sS https://starship.rs/install.sh | sh
+echo 'eval "$(starship init bash)"' >> .bashrc
+source ~/.bashrc
 ```
 
 ### Themes
