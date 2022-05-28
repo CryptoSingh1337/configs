@@ -68,7 +68,7 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # change focus
 bindsym $mod+j focus left
@@ -282,6 +282,8 @@ for_window [class=".*"] move position center
 # Set inner/outer gaps
 gaps inner 6
 gaps outer 3
+smart_gaps on
+hide_edge_borders smart
 
 # background start
 exec --no-startup-id nitrogen --restore
