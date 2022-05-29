@@ -15,7 +15,7 @@ public class ${TM_FILENAME/(.+)\..+|.*/$1/:name} {
 		int t = sc.nextInt();
 		${TM_FILENAME/(.+)\..+|.*/$1/:name} obj = new ${TM_FILENAME/(.+)\..+|.*/$1/:name}();
 		while (t-- > 0)
-			t.solve(sc, pw);
+			obj.solve(sc, pw);
 		pw.close();
 		sc.close();
     }
