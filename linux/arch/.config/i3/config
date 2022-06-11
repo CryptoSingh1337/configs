@@ -113,7 +113,7 @@ set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:ﭧ"
 set $ws6 "6:"
-set $ws8 "7:"
+set $ws7 "7:"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
