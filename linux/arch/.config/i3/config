@@ -111,18 +111,27 @@ set $ws1 "1:"
 set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
+set $ws5 "5:ﭧ"
+set $ws6 "6:"
+set $ws8 "7:"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
 bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
 
 # open new empty workspace
 bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
@@ -143,8 +152,7 @@ for_window [urgent=latest] focus
 bindsym $mod+F2 exec --no-startup-id brave
 bindsym $mod+F3 exec --no-startup-id thunar
 bindsym $mod+F4 exec --no-startup-id subl
-bindsym $mod+F5 exec --no-startup-id code
-bindsym $mod+F6 exec --no-startup-id discord
+bindsym $mod+F5 exec --no-startup-id slack
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -249,8 +257,13 @@ bar {
 # Assign windows: #
 ###################
 
+assign [class="Alacritty"] $ws1
 assign [class="Brave"] $ws2
+assign [class="Thunar"] $ws3
 assign [class="jetbrains-idea"] $ws4
+assign [class="Postman"] $ws5
+assign [class="DBeaver"] $ws6
+assign [class="Slack"] $ws7
 
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
