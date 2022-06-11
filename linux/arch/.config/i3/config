@@ -125,7 +125,7 @@ bindsym $mod+Shift+3 move container to workspace number $ws3
 bindsym $mod+Shift+4 move container to workspace number $ws4
 
 # open new empty workspace
-bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace
+bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -250,6 +250,7 @@ bar {
 ###################
 
 assign [class="Brave"] $ws2
+assign [class="jetbrains-idea"] $ws4
 
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
