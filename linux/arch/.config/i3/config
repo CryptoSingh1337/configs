@@ -8,11 +8,11 @@ exec --no-startup-id nm-applet
 # Application menu handled by rofi: #
 #####################################
 
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
-		-config ~/.config/rofi/rofidmenu.rasi
+bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun -modi drun \
+		-theme ~/.config/rofi/blurry.rasi
 
 bindsym $mod+t exec --no-startup-id rofi -show window \
-		-config ~/.config/rofi/rofidmenu.rasi
+		-theme ~/.config/rofi/blurry.rasi
 
 #################
 # Key Bindings: #
@@ -218,7 +218,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
 # Picom
-exec --no-startup-id picom --experimental-backends -b
+exec --no-startup-id picom --experimental-backends --backend glx
 
 # num lock activated
 exec --no-startup-id numlockx on
