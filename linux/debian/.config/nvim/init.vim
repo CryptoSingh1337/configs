@@ -12,7 +12,7 @@ call plug#begin()
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'https://github.com/sonph/onehalf', {'rtp': 'vim/'} " OneHalf theme
+Plug 'https://github.com/morhetz/gruvbox' " Gruvbox theme
 Plug 'https://github.com/wakatime/vim-wakatime' " Wakatime
 
 set encoding=UTF-8
@@ -36,6 +36,7 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 :syntax on
 :set t_Co=256
-:colorscheme onehalfdark
-let g:airline_theme="onehalfdark"
+:colorscheme gruvbox
+:set background=dark
+let g:airline_theme="gruvbox"
 :set termguicolors
