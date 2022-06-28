@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ip=$(ifconfig | grep inet | awk 'NR==1{printf("%s\n", $2)}')
+ip=$(ifconfig enp2s0 | grep inet | awk 'NR==1{printf("%s\n", $2)}')
 
 echo $ip
