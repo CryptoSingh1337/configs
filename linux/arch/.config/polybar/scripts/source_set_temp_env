@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source /home/saransh/.config/polybar/scripts/set_temp_env
+
+/home/saransh/.config/polybar/launch.sh
