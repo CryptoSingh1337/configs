@@ -91,6 +91,18 @@ echo 'eval "$(starship init bash)"' >> .bashrc
 source ~/.bashrc
 ```
 
+### Reinstall GRUB
+- Boot using live ISO
+- Mount the `/` as `/mnt` and `/boot/efi` as `/mnt/boot/efi`
+```bash
+sudo su
+fdisk -l
+mount /dev/nvme0n1pX /mnt
+mount /dev/nvme0n1pX /mnt/boot/efi
+arch-chroot /mnt
+grub-install
+```
+
 ### Themes
 - [Arc-Darkest-3.38](https://www.xfce-look.org/p/1317409) - Endeavour OS
 - [Nordic](https://www.xfce-look.org/p/1267246)
