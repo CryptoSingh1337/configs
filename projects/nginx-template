@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name lexical.saranshkumar.live www.lexical.saranshkumar.live;
+    location / {
+        proxy_pass http://127.0.0.1:8080;  # Use the port your Spring Boot app is running on
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
