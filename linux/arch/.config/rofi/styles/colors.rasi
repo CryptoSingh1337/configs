@@ -1,1 +1,1 @@
-@import "gruvboxdark-hard.rasi"
+@import "~/.config/rofi/styles/gruvbox.rasi"

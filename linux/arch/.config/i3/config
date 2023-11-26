@@ -3,16 +3,18 @@ set $mod Mod4
 font pango: FiraCode Nerd Font SemiBold  10
 
 exec --no-startup-id nm-applet
+# start blueberry app for managing bluetooth devices from tray:
+exec --no-startup-id blueberry-tray
 
 #####################################
 # Application menu handled by rofi: #
 #####################################
 
 bindsym $mod+d exec --no-startup-id rofi -no-lazy-grab -show drun -modi drun \
-		-theme ~/.config/rofi/blurry.rasi
+		-theme ~/.config/rofi/theme.rasi
 
 bindsym $mod+t exec --no-startup-id rofi -show window \
-		-theme ~/.config/rofi/blurry.rasi
+		-theme ~/.config/rofi/theme.rasi
 
 #################
 # Key Bindings: #
@@ -39,8 +41,8 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 # Backlight control
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
+#bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
+#bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -5 && notify-send "Brightness - $(xbacklight -get | cut -c1-2)%"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -107,14 +109,14 @@ bindsym $mod+Shift+Tab workspace prev
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:ﭧ"
-set $ws6 "6:"
-set $ws7 "7:"
-set $ws8 "8:"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5:ﭧ "
+set $ws6 "6: "
+set $ws7 "7: "
+set $ws8 "8: "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -218,7 +220,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
 # Picom
-exec --no-startup-id picom --experimental-backends --backend glx
+exec --no-startup-id picom --backend glx
 
 # num lock activated
 exec --no-startup-id numlockx on
@@ -239,7 +241,7 @@ client.background       #F8F8F2
 # finds out, if available)
 bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	font pango: FiraCode Nerd Font SemiBold 10
+	font pango: FiraCode Nerd Font SemiBold 11
 	position top
 	i3bar_command i3bar --transparency
 
